@@ -56,17 +56,19 @@ footer {
     background: #fce138;
     padding: 40px 35px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-footer h2 {
-    display: inline; /* allows text to follow it to the right after, instead of stacking it down */
+footer h2 { 
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
 footer div {
-    float: right; /* moves the text to the right hand side */
+    
     line-height: 1.5;
     text-align: right;
 }
@@ -82,21 +84,35 @@ section {
 
 .hero {
     background-image: url("../assets/images/flipped-hero-image.jpg");
-    height: 600px;
     background-size: cover; /* Makes the image not cut off, uses full size image to cover page*/
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-cta {
+    width: 35%; /* says take up 35% of this flexbox*/
+    text-align: right;
+    margin: 3.5%;
+    color: white;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 
 .hero-form {
     color: #024e76;
     background-color: #fce138;
-    width: 500px;
     padding: 20px;
     border: 3px solid #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form h3 {
